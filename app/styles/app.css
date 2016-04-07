@@ -1,8 +1,17 @@
 #border {
   border: 1px solid blue;
+}
+
+.center {
   text-align: center;
 }
 
 .jumbotron {
   margin-bottom: 0;
+  background: purple;
+  color: white;
+}
+
+.addQuestion {
+  text-align: center;
 }
