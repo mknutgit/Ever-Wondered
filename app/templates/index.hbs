@@ -1,2 +1,23 @@
-<h1>Got Questions -> Get Answers!</h1>
-  <p>Enter a question below or click on a question to see the answers</p>
+  <div class="container">
+    <form>
+      <div class="form-group">
+          <label for="question">What's your Question?</label>
+          {{textarea value=question id="question"}}
+
+          <label for="author">Author</label>
+          {{input value=author id="author"}}
+          
+          <label for="notes">Notes</label>
+          {{input value=notes id="notes"}}
+          <button class="btn-sm btn-success" {{action 'addQuestion' question}}>Ask!</button>
+      </div>
+    </form>
+  <hr>
+  <h2>Current Questions:</h2>
+    {{#each model as |question|}}
+    <div class="container" id="border">
+      <h3>{{question.question}}</h3>
+        <p><strong>Asker:</strong> {{question.author}}</p>
+    </div>
+    {{/each}}
+  </div>

@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'js-week3-cr-qa',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: 'https://qs-as.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

@@ -1,0 +1,16 @@
+{ "questions": [{
+    "question": "Where does Santa Clause live",
+    "author": "Matt Knutson",
+    "notes": "age old question"
+  },
+  {
+    "question": "Who killed JFK",
+    "author": "unknown",
+    "notes": "who knows"
+  },
+  {
+    "question": "Ember or Angular",
+    "author": "code guru",
+    "notes": "hard to answer"
+  }]
+}

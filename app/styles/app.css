@@ -1,0 +1,8 @@
+#border {
+  border: 1px solid blue;
+  text-align: center;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+}
