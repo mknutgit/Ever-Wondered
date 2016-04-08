@@ -3,17 +3,18 @@
 {{add-question addQuestion='addQuestion' forgetIt='forgetIt'}}
 <hr>
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-6 col-centered col-sm-offset-3">
       <h2 class="center">Current Questions:</h2>
       {{#each model as |question|}}
       <div id="border">
         <h3 class="center">{{question.question}}</h3>
           <p class="center"><strong>Asker:</strong> {{question.author}}</p>
+          <div class="center">
+            <button class="btn-sm btn-primary" >Add to Question Cart</button>
+          </div>
         </div>
         {{/each}}
     </div>
-    <div>
-      Other data over here!!!!!!!!!
-    </div>
+
   </div>
 </div>
