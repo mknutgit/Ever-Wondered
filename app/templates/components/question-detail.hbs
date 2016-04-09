@@ -2,12 +2,38 @@
 <div class="row">
   <div class="col-md-6 col-centered col-sm-offset-3">
     <div id="border" >
-      <h3 class="center">{{question.question}}</h3>
+      <h3 class="center">{{question.ask}}</h3>
       <p class="center"><strong>Asker:</strong> {{question.author}}</p>
       <p class="center">Notes: {{question.notes}}</p>
       <div class="center">
         <button class="btn-sm btn-danger" {{action 'delete' question}} >Delete!</button>
       </div>
+      {{#if updateQuestionForm}}
+     <div>
+       <form>
+         <div class="form-group">
+           <label for="ask">Question</label>
+           {{input value=ask id="ask" placeholder=question.ask}}
+         </div>
+
+         <div class="form-group">
+           <label for="author">Author</label>
+           {{input value=author value=author placeholder=question.author}}
+         </div>
+
+         <div class="form-group">
+           <label for="notes">Notes</label>
+           {{textarea value=notes value=notes rows="2" placeholder=question.notes}}
+         </div>
+         <button {{action 'updateQuestion' question}}>Save Changes</button>
+       </form>
+     </div>
+     {{else}}
+        <div class="center">
+         <button id="center" class="btn-sm btn-primary"{{action 'updateQuestionForm'}}>Edit Question</button>
+       </div>
+
+     {{/if}}
     </div>
   </div>
 </div>
