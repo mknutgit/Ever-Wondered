@@ -3,5 +3,8 @@
   {{#link-to 'question' question.id}}
   <h3 class="center">{{question.ask}} {{question-answer question}}</h3>
     <p class="center"><strong>Asker:</strong> {{question.author}}</p>
-    <hr>
   {{/link-to}}
+  <div class="center">
+    <button {{action 'addToCart' question}} class="btn-sm btn-success" >Add to Question Cart</button>
+  </div>
+  <hr>
