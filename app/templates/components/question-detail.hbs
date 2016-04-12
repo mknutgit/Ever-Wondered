@@ -6,6 +6,9 @@
       <p class="center"><strong>Asker:</strong> {{question.author}}</p>
       <p class="center">Notes: {{question.notes}}</p>
       <div class="center">
+        <button class="btn-sm btn-success" >Add to Question Cart</button>
+      </div>
+      <div class="center">
         <button class="btn-sm btn-danger" {{action 'delete' question}} >Delete!</button>
       </div>
       {{#if updateQuestionForm}}
