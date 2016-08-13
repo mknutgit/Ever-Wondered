@@ -42,7 +42,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.baseURL = '/js-week3-cr-qa/dist';
+    ENV.locationType = 'hash';
   }
 
   return ENV;
