@@ -19,3 +19,7 @@
 #center {
   text-align: center;
 }
+
+.glyphicon {
+  color: red !important;
+}
