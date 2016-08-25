@@ -1,7 +1,9 @@
 
-
+<div class="col-sm-12">
+  {{question-answer question}}
+</div>
   {{#link-to 'question' question.id}}
-  <h3 class="center">{{question.ask}} {{question-answer question}}</h3>
+  <h3 class="center">{{question.ask}}</h3>
     <p class="center"><strong>Asker:</strong> {{question.author}}</p>
   {{/link-to}}
   <div class="center">

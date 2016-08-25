@@ -22,4 +22,10 @@
 
 .glyphicon {
   color: red !important;
+  text-align: center;
+}
+
+.noAnswer {
+  font-weight: bold;
+  text-align: center;
 }
