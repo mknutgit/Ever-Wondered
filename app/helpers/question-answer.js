@@ -6,7 +6,7 @@ export function questionAnswer(params/*, hash*/) {
   if(question.get('answers').get('length') >= 2) {
     return Ember.String.htmlSafe('<p class="glyphicon glyphicon-fire"></p>');
   } else if (question.get('answers').get('length') < 1) {
-    return Ember.String.htmlSafe('<p class="noAnswer">No answers yet!</p>');
+    return Ember.String.htmlSafe('<p class="noAnswer">No answers!</p>');
   }
 }
 
