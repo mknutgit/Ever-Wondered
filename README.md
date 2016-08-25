@@ -2,6 +2,8 @@
 
 This Q&A message board was created using Ember.js as an exercise to explore the many aspects of the framework. Users can create new questions to ask the internet and the internet can respond. They can select questions they like and add them to a cart to review only those. It allows users to edit and delete both questions and answers. Additionally users can upvote or downvote answeres as they choose. Data is persisted via models, Ember Data and Firebase. Both services and custom helpers are utilized as well as computed properties.
 
+Future enhancements include user and admin sign-in as well as setting up a favorites service.
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
