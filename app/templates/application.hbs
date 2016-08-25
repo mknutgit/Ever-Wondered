@@ -1,17 +1,23 @@
 
+<div class="fixed">
 
   <div class="jumbotron" style="background-image: url(https://static.pexels.com/photos/1698/city-man-person-skyline.jpg)">
     <h1>What's on Your Mind?</h1>
   </div>
   <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class='navbar-header'>
+
+      <div class='navbar-default'>
         {{#link-to 'index' class="navbar-brand"}}Home{{/link-to}}
         {{#link-to 'about' class="navbar-brand"}}About{{/link-to}}
-        {{#link-to 'cart' class="navbar-brand"}}Question-Cart{{/link-to}}
+      <ul class='nav navbar-nav'>
+        <li>
+          {{#link-to 'cart' class="navbar-brand"}}Question Cart{{/link-to}}
+        </li>
+      </ul>
       </div>
-    </div>
+
   </nav>
+</div>
 
 
 <body>

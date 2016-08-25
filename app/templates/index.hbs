@@ -2,14 +2,15 @@
 
 {{add-question addQuestion='addQuestion' forgetIt='forgetIt'}}
 
-  <div class="row">
-    <div class="display col-md-6 col-sm-offset-3">
+<div class="container">
+
+    <div class="display">
 
 
       {{#each model.questions as |question|}}
         {{question-tile question=question}}
       {{/each}}
-
+      
     </div>
 
-  </div>
+</div>
