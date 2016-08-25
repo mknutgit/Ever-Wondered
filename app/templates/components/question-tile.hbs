@@ -1,12 +1,21 @@
 
-<div class="col-sm-12">
-  {{question-answer question}}
-</div>
-  {{#link-to 'question' question.id}}
-  <h3 class="center">{{question.ask}}</h3>
-    <p class="center"><strong>Asker:</strong> {{question.author}}</p>
-  {{/link-to}}
-  <div class="center">
-    <button {{action 'addToCart' question}} class="btn-sm btn-success" >Add to Question Cart</button>
+<div class="row">
+  <div class="col-sm-2">
+    {{question-answer question}}
   </div>
+    {{#link-to 'question' question.id}}
+    <div class="col-sm-8">
+    <h4 class="centerit">{{question.ask}}</h4>
+    </div>
+
+    <div class="col-sm-offset-2">
+      <p class="center"><strong>Asker:</strong> {{question.author}}</p>
+    </div>
+    {{/link-to}}
+</div>
+
+  <div class="centerit">
+    <button class="waves-effect waves-green btn" {{action 'addToCart' question}}>Add to Question Cart</button>
+  </div>
+
   <hr>

@@ -1,11 +1,10 @@
-<div class="container">
+
 
 {{add-question addQuestion='addQuestion' forgetIt='forgetIt'}}
-<hr>
+
   <div class="row">
-    <div class="col-md-6 col-centered col-sm-offset-3">
-      <h2 class="center">Current Questions:</h2>
-      <hr>
+    <div class="display col-md-6 col-sm-offset-3">
+
 
       {{#each model.questions as |question|}}
         {{question-tile question=question}}
@@ -14,4 +13,3 @@
     </div>
 
   </div>
-</div>
