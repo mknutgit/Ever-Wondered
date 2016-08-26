@@ -5,9 +5,10 @@
       <h3 class="center">{{question.ask}}</h3>
       <p class="center"><strong>Asker:</strong> {{question.author}}</p>
       <p class="center">Notes: {{question.notes}}</p>
-      
+
       <div class="center">
-        <button class="btn-sm btn-danger" {{action 'delete' question}} >Delete!</button>
+        <button class="btn-sm btn-danger floatRight" {{action 'delete' question}} >Delete!</button>
+        <button class="btn-sm btn-primary "{{action 'updateQuestionForm'}}>Edit Question</button>
       </div>
       {{#if updateQuestionForm}}
      <div>
@@ -30,10 +31,6 @@
        </form>
      </div>
      {{else}}
-        <div class="center">
-         <button id="center" class="btn-sm btn-primary"{{action 'updateQuestionForm'}}>Edit Question</button>
-       </div>
-
      {{/if}}
     </div>
   </div>
