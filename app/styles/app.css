@@ -90,6 +90,6 @@ body {
   position: relative;
 }
 
-#cartRight {
+.floatRight {
   float: right;
 }
