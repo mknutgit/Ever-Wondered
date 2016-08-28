@@ -12,13 +12,13 @@
       </div>
 
       <div>
-        <button class="btn-sm btn-success" {{action 'addAnswer'    answer}}>Submit</button>
+        <button class="btn-sm btn-success" {{action 'addAnswer' answer}}>Submit</button>
         <button class="btn-sm btn-danger" {{action 'forgetIt'}}>Forget It!</button>
       </div>
     </form>
   </div>
 {{else}}
-<hr>
+
 <div class="centerit">
   <button class="btn-sm btn-primary"{{action 'answerFormShow'}}>Add an Answer</button>
 </div>

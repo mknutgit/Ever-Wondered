@@ -13,6 +13,7 @@ export default Ember.Component.extend({
       var params = {
         answer: this.get('answer') ? this.get('answer'): "",
         author: this.get('author') ? this.get('author'): "",
+        voteCount: 0,
         question: this.get('question') ? this.get('question'): ""
       };
       this.set('addNewAnswer', false);

@@ -6,9 +6,6 @@ export default Ember.Component.extend({
 
   updateAnswerFrom: false,
   actions: {
-    update(answer,params) {
-      this.sendAction('update', answer, params);
-    },
     upvote(answer) {
       this.sendAction('upvote', answer);
     },
