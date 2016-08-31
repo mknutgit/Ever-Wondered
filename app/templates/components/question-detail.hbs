@@ -27,7 +27,7 @@
            <label for="notes">Notes</label>
            {{textarea value=notes value=notes rows="2" placeholder=question.notes}}
          </div>
-         <button {{action 'updateQuestion'}}>Save Changes</button>
+         <button {{action 'updateQuestion' question}}>Save Changes</button>
        </form>
      </div>
      {{else}}

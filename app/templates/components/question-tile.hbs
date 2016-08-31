@@ -3,12 +3,13 @@
   <div class="col-sm-2">
     {{question-answer question}}
   </div>
+
     {{#link-to 'question' question.id}}
     <div class="col-sm-8">
     <h4 class="centerit">{{question.ask}}</h4>
     </div>
 
-    <div class="col-sm-offset-2">
+    <div class="col-sm-offset-3">
       <p class="center"><strong>Asker:</strong> {{question.author}}</p>
     </div>
     {{/link-to}}
