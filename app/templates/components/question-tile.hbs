@@ -1,22 +1,19 @@
 
-<div class="row">
-  <div class="col-sm-2">
-    {{question-answer question}}
-  </div>
-
-    {{#link-to 'question' question.id}}
-    <div class="col-sm-8">
-    <h4 class="centerit">{{question.ask}}</h4>
+  <div class="row">
+    <div class="col-sm-1" >
+      {{question-answer question}}
     </div>
-
-    <div class="col-sm-offset-3">
-      <p class="center"><strong>Asker:</strong> {{question.author}}</p>
+    {{#link-to 'question' question.id}}
+    <div >
+      <h4 class="col-sm-10 centerit">{{question.ask}}</h4>
     </div>
     {{/link-to}}
-</div>
-
-  <div class="centerit">
-    <button class="waves-effect waves-green btn" {{action 'addToCart' question}}>Add to Question Cart</button>
+    <div >
+      <p class="col-sm-1 centerit"><strong>Answers:</strong> {{totalAnswers}}</p>
+    </div>
   </div>
-
-  <hr>
+  <div class="row">
+    <div class="centerit">
+        <button class="waves-effect waves-green btn" {{action 'addToCart' question}}>Add to Favorites</button>
+    </div>
+  </div>

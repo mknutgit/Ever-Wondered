@@ -28,7 +28,7 @@
   text-align: center;
 }
 
-.center {
+.left {
   text-align: left;
 }
 
@@ -57,7 +57,7 @@
 }
 
 body {
-  background-color: lightslategrey;
+  background-color: #998877;
 }
 
 .question-detail {
@@ -72,7 +72,7 @@ body {
   background-color: #f4f1e8;
   margin: 25px;
   padding: 25px;
-  font-weight: 500;
+  /*font-weight: 500;*/
 }
 
 #questions {
@@ -97,3 +97,7 @@ body {
 #background-color {
   background-color: black;
 }
+
+/*.navbar {
+  background-image: url("https://static.pexels.com/photos/27351/pexels-photo.jpg");
+}*/

@@ -1,12 +1,12 @@
 
 <div class="row">
-  <div class="col-md-6 col-centered col-sm-offset-3">
+  <div class="col-md-8 col-centered col-sm-offset-2">
     <div id="border" >
-      <h3 class="center">{{question.ask}}</h3>
-      <p class="center"><strong>Asker:</strong> {{question.author}}</p>
-      <p class="center">Notes: {{question.notes}}</p>
+      <h4 class="center">{{question.ask}}</h4>
+      <p><strong>Asker:</strong> {{question.author}}</p>
+      <p>Notes: {{question.notes}}</p>
 
-      <div class="center">
+      <div class="left">
         <button class="btn-sm btn-danger floatRight" {{action 'delete' question}} >Delete!</button>
         <button class="btn-sm btn-primary "{{action 'updateQuestionForm'}}>Edit Question</button>
       </div>

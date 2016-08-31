@@ -9,10 +9,10 @@
         <br>
         <label for="author" default="">Author:</label>
         {{input value=author id="author" class="form-control"}}
-      </div>
 
         <label for="notes">Notes:</label>
         {{input value=notes id="notes" class="form-control"}}
+      </div>
       <div>
         <button class="btn-sm btn-success" {{action 'addQuestion'    question}}>Ask!</button>
         <button class="btn-sm btn-danger" {{action 'forgetIt'}}>Forget It!</button>

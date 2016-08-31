@@ -4,13 +4,15 @@
 
 <div class="container">
 
-    <div class="display">
+
 
 
       {{#each model.questions as |question|}}
-        {{question-tile question=question}}
+      <div id="border" >
+        {{question-tile question=question answers=model.answers}}
+      </div>
       {{/each}}
-      
-    </div>
+
+    
 
 </div>

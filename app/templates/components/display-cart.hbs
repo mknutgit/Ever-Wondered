@@ -1,13 +1,16 @@
-<h4>Total Questions in Your Cart: {{totalQuestions}}</h4>
-<ul>
+<h4 class="centerit">Total Questions in Your Cart: {{totalQuestions}}</h4>
+
+
+<div class="container">
 {{#each questionCart.questions as |question|}}
-  <div>
-    {{#link-to 'question' question.id}}
-    <h3 class="center">{{question.ask}}</h3>
-    {{/link-to}}
-    <p class="center"><strong>Asker:</strong> {{question.author}}</p>
-    <p class="center">Notes: {{question.notes}}</p>
+  <div id="border">
+
+      {{#link-to 'question' question.id}}
+      <h3 class="center">{{question.ask}}</h3>
+      {{/link-to}}
+      <p><strong>Asker:</strong> {{question.author}}</p>
+      <p>Notes: {{question.notes}}</p>
+      <button class="waves-effect waves-green btn" {{action 'removeFromCart' question}}>Remove</button>
   </div>
-  <hr>
 {{/each}}
-</ul>
+</div>
