@@ -10,24 +10,25 @@
         <button class="btn-sm btn-danger floatRight" {{action 'delete' question}} >Delete!</button>
         <button class="btn-sm btn-primary "{{action 'updateQuestionForm'}}>Edit Question</button>
       </div>
+      <br />
       {{#if updateQuestionForm}}
      <div>
        <form>
          <div class="form-group">
            <label for="ask">Question</label>
-           {{input value=ask id="ask" placeholder=question.ask}}
+           {{input value=ask id="ask" placeholder=question.ask class="form-control"}}
          </div>
 
          <div class="form-group">
            <label for="author">Author</label>
-           {{input value=author value=author placeholder=question.author}}
+           {{input value=author value=author placeholder=question.author class="form-control"}}
          </div>
 
          <div class="form-group">
            <label for="notes">Notes</label>
-           {{textarea value=notes value=notes rows="2" placeholder=question.notes}}
+           {{textarea value=notes value=notes rows="2" placeholder=question.notes class="form-control"}}
          </div>
-         <button {{action 'updateQuestion' question}}>Save Changes</button>
+         <button class="waves-effect waves-green btn" {{action 'updateQuestion' question}}>Update</button>
        </form>
      </div>
      {{else}}
