@@ -42,7 +42,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.baseURL = '/js-week3-cr-qa/dist';
+    ENV.baseURL = '/ever-wondered/dist';
     ENV.locationType = 'hash';
   }
 
